@@ -11,6 +11,12 @@
     "no-console": 0,
     "indent": 0,
     "linebreak-style": 0,
+    "comma-dangle": [
+      "error",
+      {
+        "functions": "never"
+      }
+    ],
     "prettier/prettier": [
       "error",
       {

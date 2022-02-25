@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 const ourReadStream = fs.createReadStream(`${__dirname}/myFile.txt`);
-const ourWriteStream = fs.createWriteStream(`${__dirname}/output.txt`);
-
 ourReadStream.on('data', (chunk) => {
-    ourWriteStream.write(chunk);
+    console.log(chunk);
 });
+
+console.log('hello');
