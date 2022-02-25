@@ -14,7 +14,8 @@
     "comma-dangle": [
       "error",
       {
-        "functions": "never"
+        "functions": "never",
+        "prettier/prettier": 0
       }
     ],
     "prettier/prettier": [

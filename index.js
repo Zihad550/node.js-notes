@@ -1,8 +1,13 @@
-const fs = require('fs');
+/*
+ * title: Practice node.js
+ * author: Jehad Hossain
+ * date: 25 feb 2022
+ */
+// dependencies
+// app object - module scaffolding
+const app = {};
 
-const ourReadStream = fs.createReadStream(`${__dirname}/myFile.txt`);
-const ourWriteStream = fs.createWriteStream(`${__dirname}/output.txt`);
-
-ourReadStream.on('data', (chunk) => {
-    ourWriteStream.write(chunk);
-});
+// configuration
+app.config = {
+    timeBetweenQuotes: 1000,
+};
